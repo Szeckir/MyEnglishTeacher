@@ -25,8 +25,10 @@ no access to this repo. The repo handles everything around it.
    state of `02-progress.md`.
 2. **The lesson** — open a new Claude conversation, paste the briefing as the
    first message, then tap the sound-wave icon and talk for 50 minutes.
-3. **After the lesson** — copy the transcript (or at minimum the final REPORT
-   block) back into Cowork and say `intake`. The coach produces the four
+3. **After the lesson** — copy the final REPORT block (it comes inside a code
+   block, so it is one click) back into Cowork and say `intake`. The full
+   transcript is optional: paste it too if you want the lesson record to quote
+   what was actually said, but the REPORT alone is enough. The coach produces the four
    outputs exactly as in a normal lesson.
 
 ## A primeira aula por voz

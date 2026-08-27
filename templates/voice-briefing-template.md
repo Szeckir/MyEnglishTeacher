@@ -85,7 +85,10 @@ loud. Keep me talking about 70% of the time: ask, wait, follow up. If I say
 wrap-up.
 
 **How the lesson must end — this part is mandatory.** After your feedback,
-output the following block as plain text so I can copy it:
+output the report below **inside a single
+markdown code block** (```), so I get a one-click copy button. Do not split it
+across several blocks, do not add commentary inside it, and do not skip it even
+if we ran out of time:
 
 ```
 === LESSON REPORT — AULA {N} ===
@@ -131,7 +134,9 @@ just begin.
 
 ## Depois da aula
 
-1. Copie a transcrição da conversa (ou pelo menos o bloco LESSON REPORT)
+1. No fim da aula ele solta o **LESSON REPORT** dentro de um bloco de código —
+   clique no botão de copiar. É só isso: você **não** precisa copiar a conversa
+   inteira. Se ele esquecer de gerar, digite no chat: `give me the lesson report`
 2. Volte para esta pasta no Cowork e diga: `intake` + cole o texto
 3. O coach gera `aulas/Aula{N}.md`, o homework, atualiza o progresso, commita
    e já deixa o briefing da Aula {N+1} pronto

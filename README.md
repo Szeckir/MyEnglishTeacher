@@ -162,6 +162,10 @@ os arquivos e commita.
 ### Voz (conversa por áudio)
 O voice mode do Claude não funciona dentro do Cowork — então funciona assim:
 
+**Pré-requisito: você já rodou o `setup`.** O briefing é montado a partir do seu
+perfil, e ele vai parar numa conversa que não tem acesso a esta pasta — se o
+perfil estiver vazio, não tem como consertar de lá.
+
 1. **Antes:** digite `briefing`. Ele gera o `NEXT-LESSON-BRIEFING.md`, um prompt
    com todo o seu contexto atual
 2. **Durante:** abra uma conversa nova do Claude, cole o bloco entre `BEGIN` e
@@ -170,6 +174,20 @@ O voice mode do Claude não funciona dentro do Cowork — então funciona assim:
 
 Custa dois copy-pastes. Em troca você treina pronúncia, ritmo e escuta — que é
 o que o modo escrito não consegue fazer.
+
+**E na primeira aula?** Funciona, e para B1 pra cima costuma ser até melhor
+começar por voz: é falando que a lacuna real aparece. O briefing da Aula 1 sai
+como diagnóstico — sem erros recorrentes para revisar, small talk puxada do seu
+perfil, e uma instrução explícita para o professor estimar o seu nível **falado**
+de ouvido. Espere que ele venha uma faixa abaixo do seu nível escrito: quem
+escreve em B2 costuma falar em B1, porque tem a gramática mas não tem a
+velocidade de busca. Isso é informação, não fracasso — o `intake` atualiza o seu
+perfil com os dois níveis.
+
+**Exceção:** se você está começando do zero (A0–A2), faça as três primeiras
+aulas por escrito. Colar um prompt de 900 palavras em inglês numa conversa em
+branco e ser respondido em inglês falado é o jeito mais rápido de desistir. Da
+quarta aula em diante, a voz vira a parte mais valiosa do curso.
 
 ### Ditado
 Use o ditado do sistema para falar em vez de digitar, na aula escrita normal.

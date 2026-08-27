@@ -107,6 +107,16 @@ Só para calibrar o tamanho da lição de casa — não crie cronograma fixo.
 **Por voz** (o professor gera um briefing para você colar numa conversa com
 voice mode) · **Ditado** (você fala, ele responde escrito)
 
+> **Se ela escolher voz e o nível for A0–A2:** diga, uma vez e sem insistir, que
+> as três primeiras aulas rendem mais por escrito — ela consegue reler, ver as
+> palavras e ir no próprio ritmo — e que a partir da quarta a voz passa a valer
+> muito mais. Se ela quiser voz mesmo assim, respeite e registre a escolha.
+>
+> **Se ela escolher voz em qualquer nível:** avise que a Aula 1 por voz também
+> serve para medir o nível **falado**, que costuma ficar uma faixa abaixo do
+> escrito. Isso não é um problema — é a informação mais útil que a primeira
+> aula pode dar.
+
 ---
 
 ## Depois de responder

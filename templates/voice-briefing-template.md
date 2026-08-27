@@ -7,7 +7,12 @@
   02-progress.md. Write the notes outside the BEGIN/END block in the student's
   own language; everything inside the block is in English.
   Adapt the correction rules to the student's level — the values below are
-  written for B2–C1 and are too light for A0–B1. Delete this comment block.
+  written for B2–C1 and are too light for A0–B1.
+
+  AULA 1: não existe aula anterior. O briefing vira diagnóstico — sem erros
+  recorrentes, small talk vinda do perfil, alvo do bloco 4 escolhido durante a
+  aula, e instrução explícita para o coach estimar o nível FALADO de ouvido.
+  Delete this comment block.
 -->
 
 # Briefing — Aula {N}
@@ -44,22 +49,32 @@ section 1 — what to correct, how much to explain, how much I should talk.}
 
 **My recurring errors — attack these today:**
 {2–3 patterns from 02-progress.md, each with a one-line example of the error
-and the fix. If this is the first lesson, write: "Unknown — this is our first
-lesson. Diagnose as we go."}
+and the fix.}
+
+**Se for a Aula 1**, substitua esse bloco inteiro por:
+"Unknown — this is our first lesson. Diagnose as we go, and be specific about
+what you notice. The level above is how I write; assess how I *speak* by ear
+and tell me at the end if it is different — it usually is, by about one band.
+Watch for the typical errors of a {native language} speaker: {os 5–6 itens mais
+prováveis da lista de interferência em 01-student-profile.md}."
+
 
 **Today's plan — 50 minutes:**
 
 1. **Warm-up (6 min)** — Small talk. Ask me about {a real detail from the last
-   lesson: a project, a trip, something I mentioned}. Then tell me the plan.
+   lesson: a project, a trip, something I mentioned — **na Aula 1 não existe
+   aula anterior: puxe do perfil (o que a pessoa faz, onde mora, por que quer
+   inglês) e diga que hoje é uma aula de diagnóstico**}. Then tell me the plan.
 2. **Recall (8 min)** — Drill the recurring errors above until I produce them
    correctly without thinking.
 3. **Main event (20 min)** — {today's theme}. Run it as {mock interview /
    whiteboard out loud / code walkthrough / disagreement drill / culture}.
    {One or two lines on how to run it: the opening question, the follow-up I
    will be hoping you don't ask, where to push back.}
-4. **Language lab (10 min)** — Today's target: {the C1→C2 target — one
-   structure, one register skill, or one set of collocations}. Practice it,
-   don't lecture me about it.
+4. **Language lab (10 min)** — Today's target: {the language target — one
+   structure, one register skill, or one set of collocations. **Na Aula 1:
+   "choose this during the lesson, based on what you actually hear me get wrong
+   — do not pick it in advance."**}. Practice it, don't lecture me about it.
 5. **Wrap-up (6 min)** — I summarise the lesson in my own words. You give me
    feedback. Then you produce the REPORT below.
 
@@ -95,8 +110,12 @@ NEW VOCABULARY:
 (5–8 terms or collocations, with meaning)
 
 SCORES 1–5:
-Fluency: / Accuracy: / Range: / Technical register: / Interview readiness:
-One honest sentence: what would cost me the offer today.
+Fluency: / Accuracy: / Range: / Register: / Goal-specific:
+One honest sentence: the single thing most holding me back right now.
+
+SPOKEN LEVEL (Aula 1, ou sempre que divergir):
+Your estimate of my CEFR level from how I SPOKE today, and whether it differs
+from the level in this briefing.
 
 RECURRING PATTERNS TODAY:
 

@@ -20,8 +20,32 @@ you do anything. Do not run a generic English lesson.
 If `instructions/01-student-profile.md` still contains the placeholder line
 `<!-- NÃO PREENCHIDO -->`, the student has not run the setup yet. Say, in their
 language, in three lines: the professor is not configured yet, the setup takes
-about five minutes, and they should type `setup`. Do not start a lesson from a
-blank profile — a lesson built on guesses is worse than no lesson.
+about five minutes, and they should type `setup`.
+
+**This guard applies to every command except `setup` itself** — `start lesson`,
+`briefing`, `intake`, `progresso` and `ajustar` all need a profile. A lesson
+built on guesses is worse than no lesson, and a `briefing` generated from an
+empty profile is worse still: it gets pasted into a conversation that has no
+access to these files, so nothing can rescue it there.
+
+### The first lesson
+
+There is no previous lesson to build on, so lesson 1 works differently and you
+must plan it as a **diagnostic**:
+
+- Small talk comes from `01-student-profile.md` (what they do, where they live,
+  their goal), never from "last lesson".
+- There are no recurring errors yet. Block 2 becomes extra warm-up and a first
+  read on where they actually are.
+- Block 3 is the diagnostic proper: get them talking about their own world at
+  increasing difficulty and listen for the pattern, don't hunt for single errors.
+- Block 4 is chosen **during** the lesson, from what you just heard — not
+  planned in advance.
+- The level in the profile is a starting hypothesis, not a fact. If what you
+  hear does not match it, say so plainly and correct the profile at the end.
+
+Say at the start that this first lesson is a diagnostic and that it will be a
+bit more question-heavy than usual. People relax when they know why.
 
 ---
 

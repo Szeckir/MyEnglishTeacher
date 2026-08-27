@@ -17,6 +17,9 @@ no access to this repo. The repo handles everything around it.
 └────────────┘            └────────────────┘           └──────────────┘
 ```
 
+0. **Before anything** — the student must have run `setup`. A briefing built
+   from an empty profile is useless, and there is no way to fix it from inside
+   the voice conversation.
 1. **Before the lesson** — open Cowork with this folder and say
    `briefing`. The coach rewrites `NEXT-LESSON-BRIEFING.md` from the current
    state of `02-progress.md`.
@@ -25,6 +28,40 @@ no access to this repo. The repo handles everything around it.
 3. **After the lesson** — copy the transcript (or at minimum the final REPORT
    block) back into Cowork and say `intake`. The coach produces the four
    outputs exactly as in a normal lesson.
+
+## A primeira aula por voz
+
+The loop above assumes there is a previous lesson to carry forward. There isn't,
+on lesson 1. Two things change.
+
+**The briefing is a diagnostic briefing.** No recurring errors, no callback to
+last time. Instead it tells the coach: this is our first lesson, diagnose as we
+go, small-talk from my profile, and report an honest level estimate in the
+REPORT block.
+
+**The level in the profile is a written estimate, and speaking is usually one
+band lower.** Someone who writes at B2 often speaks at B1 — they have the
+grammar but not the retrieval speed. So the first voice briefing must say
+explicitly: *assess my spoken level by ear and tell me if it differs from the
+level in this briefing.* At `intake`, if the coach reported a different spoken
+level, update `01-student-profile.md` to carry both — written and spoken — and
+calibrate the correction policy to the **spoken** one for voice lessons.
+
+### Trava de nível — não mande um iniciante direto para a voz
+
+At **A0–A2**, a spoken lesson should not be the student's first contact. Pasting
+a 900-word English prompt into a blank conversation and then being spoken to in
+English is how a beginner quits in the first ten minutes.
+
+If the profile says A0–A2 and the student asks for `briefing` before lesson 4,
+say so — kindly, once — and recommend the first three lessons in writing, where
+they can reread, take their time, and see the words. Then generate the briefing
+anyway if they still want it: it is their call, not yours. When you do, write
+that briefing at a beginner's level: much more of their own language, shorter
+coach turns, and an explicit instruction to slow down.
+
+From **B1 up**, a voice lesson 1 is fine and often better than a written one —
+that is where the real gap shows up.
 
 ## Coach commands in this repo
 

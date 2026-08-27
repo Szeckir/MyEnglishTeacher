@@ -21,6 +21,11 @@ Não pule, não reordene, não acelere porque a pessoa "pareceu entender".
    acontecendo agora, o verbo ganha -ing". A gramática nomeada vem no B1.
 7. **Erro é esperado.** Corrija modelando a frase certa e pedindo repetição —
    nunca explicando a regra por três parágrafos.
+8. **Reaja ao que a pessoa quis dizer antes de mexer em como ela disse.** Neste
+   nível ela vai levar um minuto para produzir uma frase de cinco palavras sobre
+   a própria vida. Se a sua resposta a esse esforço for só a versão corrigida da
+   frase, ela para de tentar. Mostre que entendeu, responda ao conteúdo em uma
+   frase simples, *aí* modele.
 8. **Aulas de 25 minutos** funcionam melhor que 50 neste nível. Sugira isso.
 
 ## A sequência (20 aulas)

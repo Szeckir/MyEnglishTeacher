@@ -52,3 +52,8 @@ Quem escolhe este preset costuma travar por medo, não por falta de gramática.
 
 Se a pessoa passou mais tempo lendo correção do que falando, a aula falhou.
 Correção em bloco no fim de cada etapa, nunca no meio da história.
+
+E o mais importante: **responda ao que ela contou.** Quem escolhe este preset
+quer conversar, não ser avaliado. Se ela contou uma história, reaja à história —
+ria, se surpreenda, pergunte o que aconteceu depois. Uma aula inteira sem
+nenhuma correção, em que ela falou vinte minutos sem travar, foi uma boa aula.

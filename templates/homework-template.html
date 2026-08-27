@@ -1,0 +1,268 @@
+<!doctype html>
+<!--
+  ============================================================================
+  HOMEWORK TEMPLATE — instructions for the coach (delete this comment on copy)
+  ============================================================================
+  Copy this file to homework/Aula{N}-homework.html and fill it with content
+  built from THIS lesson only. Never generic exercises.
+
+  Rules:
+   - Keep it self-contained: no external CSS, JS, fonts or images.
+   - 20–30 minutes of work, no more.
+   - Every item in "Fix it" must come from an error the student actually made today.
+   - Adjust the exercise types to the student's level: at A1–A2 use recognition
+     and short gap-fills; at B1–B2 use production and rewriting; at C1–C2 use
+     level-ups, register switches and open writing.
+   - Every item in "Collocations" must use vocabulary introduced today.
+   - "Level up" gives sentences he said correctly and asks for the senior version.
+   - "Speak" is a recording prompt tied to the next lesson's theme.
+   - Set data-answer on closed items so the auto-check works.
+     Multiple accepted answers: separate with | (pipe).
+   - Update the <h1>, the meta line and the intro paragraph.
+  ============================================================================
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Homework — Lesson {N}</title>
+<style>
+  :root{
+    --bg:#faf9f7; --panel:#ffffff; --ink:#1b1a18; --muted:#6b6862;
+    --line:#e4e1db; --accent:#c2410c; --accent-soft:#fdf0e8;
+    --ok:#15803d; --ok-soft:#eaf6ee; --bad:#b91c1c; --bad-soft:#fdecec;
+    --radius:12px;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#16150f; --panel:#1f1e18; --ink:#f0ece4; --muted:#9c9689;
+      --line:#33312a; --accent:#fb923c; --accent-soft:#2b1d12;
+      --ok:#4ade80; --ok-soft:#132318; --bad:#f87171; --bad-soft:#2a1414;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.65 ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    padding:32px 20px 96px}
+  .wrap{max-width:760px;margin:0 auto}
+  header{border-bottom:2px solid var(--ink);padding-bottom:18px;margin-bottom:8px}
+  .eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700}
+  h1{font-size:30px;line-height:1.2;margin:8px 0 6px;letter-spacing:-.02em}
+  .meta{color:var(--muted);font-size:14px}
+  .intro{color:var(--muted);margin:18px 0 28px}
+  .bar{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 0;margin-bottom:18px;
+    border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+  .track{flex:1;min-width:140px;height:6px;background:var(--line);border-radius:99px;overflow:hidden}
+  .fill{height:100%;width:0;background:var(--accent);transition:width .3s}
+  .score{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+  section{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px;margin-bottom:18px}
+  h2{font-size:19px;margin:0 0 4px;letter-spacing:-.01em}
+  h2 .num{color:var(--accent);font-variant-numeric:tabular-nums;margin-right:8px}
+  .hint{color:var(--muted);font-size:14px;margin:0 0 18px}
+  ol.items{list-style:none;margin:0;padding:0;counter-reset:it}
+  ol.items>li{counter-increment:it;padding:14px 0;border-top:1px solid var(--line)}
+  ol.items>li:first-child{border-top:0;padding-top:0}
+  .q{display:flex;gap:10px;margin-bottom:9px}
+  .q::before{content:counter(it) ".";color:var(--muted);font-variant-numeric:tabular-nums;flex:none}
+  .wrong{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--bad)}
+  code{background:var(--accent-soft);color:var(--accent);padding:1px 6px;border-radius:5px;
+    font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace}
+  input[type=text],textarea{width:100%;font:inherit;color:var(--ink);background:var(--bg);
+    border:1px solid var(--line);border-radius:8px;padding:9px 11px}
+  input[type=text]:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:transparent}
+  textarea{min-height:110px;resize:vertical;line-height:1.6}
+  li.ok input[type=text]{border-color:var(--ok);background:var(--ok-soft)}
+  li.bad input[type=text]{border-color:var(--bad);background:var(--bad-soft)}
+  .fb{font-size:13.5px;margin-top:7px;display:none}
+  li.ok .fb,li.bad .fb{display:block}
+  li.ok .fb{color:var(--ok)} li.bad .fb{color:var(--bad)}
+  .why{color:var(--muted);font-size:13.5px;margin-top:6px;display:none}
+  li.revealed .why{display:block}
+  button{font:inherit;font-weight:600;cursor:pointer;border-radius:8px;padding:9px 15px;
+    border:1px solid var(--line);background:var(--panel);color:var(--ink)}
+  button:hover{border-color:var(--accent);color:var(--accent)}
+  button.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+  button.primary:hover{opacity:.9;color:#fff}
+  .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+  footer{margin-top:26px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+  .toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);
+    background:var(--ink);color:var(--bg);padding:11px 20px;border-radius:99px;font-size:14px;
+    opacity:0;pointer-events:none;transition:.25s}
+  .toast.show{opacity:1;transform:translateX(-50%)}
+  @media(max-width:600px){body{padding:20px 14px 90px}h1{font-size:25px}section{padding:17px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Lesson {N} · Homework</div>
+  <h1>{Lesson theme}</h1>
+  <div class="meta">{YYYY-MM-DD} · ~25 minutes · do this before Lesson {N+1}</div>
+</header>
+
+<p class="intro">{One or two lines: what this homework is drilling and why —
+tie it to the specific errors from today's lesson.}</p>
+
+<div class="bar">
+  <div class="track"><div class="fill" id="fill"></div></div>
+  <span class="score" id="score">0 / 0</span>
+  <button onclick="checkAll()">Check answers</button>
+  <button onclick="revealAll()">Show key</button>
+</div>
+
+<!-- ══ 1. FIX IT — errors he actually made today ══ -->
+<section>
+  <h2><span class="num">1</span>Fix it</h2>
+  <p class="hint">These are sentences you said in the lesson. Rewrite each one correctly.</p>
+  <ol class="items">
+    <li data-answer="{correct version}|{accepted variant}">
+      <div class="q"><span class="wrong">{a sentence the student actually got wrong today}</span></div>
+      <input type="text" placeholder="Your correction…">
+      <div class="fb"></div>
+      <div class="why"><strong>Key:</strong> {the correct sentence} — {the rule in one line}.</div>
+    </li>
+  </ol>
+</section>
+
+<!-- ══ 2. COLLOCATIONS — vocabulary introduced today ══ -->
+<section>
+  <h2><span class="num">2</span>Collocations</h2>
+  <p class="hint">Fill the gap with the word or phrase we worked on today.</p>
+  <ol class="items">
+    <li data-answer="{answer}|{accepted variant}">
+      <div class="q">{A gap-fill sentence using today's vocabulary} ____ {rest of sentence}.</div>
+      <input type="text" placeholder="One word…">
+      <div class="fb"></div>
+      <div class="why"><strong>Key:</strong> {answer} — {one line on why this word}.</div>
+    </li>
+  </ol>
+</section>
+
+<!-- ══ 3. LEVEL UP — correct → senior ══ -->
+<section>
+  <h2><span class="num">3</span>Level up</h2>
+  <p class="hint">These sentences are already correct. Rewrite each one the way a
+  senior engineer would say it in an interview. Open answers — compare with the key.</p>
+  <ol class="items">
+    <li>
+      <div class="q">{A sentence the student said correctly today.}</div>
+      <textarea placeholder="Your senior version…"></textarea>
+      <div class="why"><strong>One good version:</strong> {the upgraded version} — {why it lands better}.</div>
+    </li>
+  </ol>
+</section>
+
+<!-- ══ 4. EXPLAIN IT — technical register, written ══ -->
+<section>
+  <h2><span class="num">4</span>Explain it</h2>
+  <p class="hint">Write 120–150 words. We will read this at the start of the next lesson.</p>
+  <ol class="items">
+    <li>
+      <div class="q">{A writing prompt tied to the next lesson's theme and the student's goal.}</div>
+      <textarea placeholder="Write here…"></textarea>
+      <div class="why"><strong>Watch out for:</strong> {the 2–3 patterns he tends to break here}</div>
+    </li>
+  </ol>
+</section>
+
+<!-- ══ 5. SPEAK — recording prompt ══ -->
+<section>
+  <h2><span class="num">5</span>Speak</h2>
+  <p class="hint">Record yourself on your phone. 90 seconds, no script, one take.
+  Listen back once and write down what you would change.</p>
+  <ol class="items">
+    <li>
+      <div class="q">{The speaking prompt — usually the opening question of the next mock interview.}</div>
+      <textarea placeholder="What would you change after listening back?"></textarea>
+    </li>
+  </ol>
+</section>
+
+<div class="actions">
+  <button class="primary" onclick="exportAnswers()">Export answers</button>
+  <button onclick="clearAll()">Clear</button>
+</div>
+
+<footer>
+  Paste the exported text into the chat at the start of <strong>Lesson {N+1}</strong>.
+  Your answers are saved in this browser as you type.
+</footer>
+
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const KEY = 'hw-lesson-{N}';
+const items = [...document.querySelectorAll('ol.items > li')];
+const closed = items.filter(li => li.dataset.answer);
+
+function norm(s){
+  return (s||'').toLowerCase().trim()
+    .replace(/[.,;:!?]+$/,'').replace(/[’‘]/g,"'").replace(/\s+/g,' ');
+}
+function checkAll(){
+  let ok = 0;
+  closed.forEach(li => {
+    const inp = li.querySelector('input');
+    const got = norm(inp.value);
+    if(!got){ li.classList.remove('ok','bad'); return; }
+    const accepted = li.dataset.answer.split('|').map(norm);
+    const good = accepted.includes(got);
+    li.classList.toggle('ok', good);
+    li.classList.toggle('bad', !good);
+    li.querySelector('.fb').textContent = good ? '✓ Correct' : '✗ Not quite — try again, or show the key.';
+    if(good) ok++;
+  });
+  document.getElementById('score').textContent = ok + ' / ' + closed.length;
+  document.getElementById('fill').style.width = (closed.length ? ok/closed.length*100 : 0) + '%';
+  save();
+}
+function revealAll(){ items.forEach(li => li.classList.add('revealed')); }
+function clearAll(){
+  items.forEach(li => {
+    li.classList.remove('ok','bad','revealed');
+    li.querySelectorAll('input,textarea').forEach(f => f.value = '');
+  });
+  document.getElementById('score').textContent = '0 / ' + closed.length;
+  document.getElementById('fill').style.width = '0%';
+  try{ localStorage.removeItem(KEY); }catch(e){}
+}
+function exportAnswers(){
+  let out = '# Homework — Lesson {N}\n\n';
+  document.querySelectorAll('section').forEach(sec => {
+    out += '## ' + sec.querySelector('h2').textContent.trim() + '\n\n';
+    sec.querySelectorAll('ol.items > li').forEach((li,i) => {
+      const q = li.querySelector('.q')?.textContent.trim() || '';
+      const a = li.querySelector('input,textarea')?.value.trim() || '(blank)';
+      out += (i+1) + '. ' + q + '\n   → ' + a + '\n\n';
+    });
+  });
+  navigator.clipboard.writeText(out)
+    .then(() => toast('Copied — paste it in the chat'))
+    .catch(() => toast('Select and copy manually'));
+}
+function toast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2200);
+}
+function save(){
+  try{
+    const data = items.map(li => li.querySelector('input,textarea')?.value || '');
+    localStorage.setItem(KEY, JSON.stringify(data));
+  }catch(e){}
+}
+function load(){
+  try{
+    const data = JSON.parse(localStorage.getItem(KEY) || '[]');
+    items.forEach((li,i) => { const f = li.querySelector('input,textarea'); if(f && data[i]) f.value = data[i]; });
+  }catch(e){}
+}
+document.addEventListener('input', save);
+load();
+document.getElementById('score').textContent = '0 / ' + closed.length;
+</script>
+</body>
+</html>

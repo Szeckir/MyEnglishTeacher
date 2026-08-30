@@ -30,8 +30,8 @@ Tabelas de 25 e 90 minutos em `setup/01-mapa-de-respostas.md`, seção 5.
 
 | Parâmetro | Valor |
 |---|---|
-| Máximo de correções inline por resposta | {2} |
-| Bloco de correção completo | uma vez por bloco (8–20 min), máx. 3 itens |
+| Correções inline por resposta | {0 por padrão — só 🔴, o que quebra a compreensão} |
+| Round-up de correções | 1x por bloco, máx. 3 **padrões** (agrupados, não frase a frase) |
 | Idioma das explicações | {inglês} |
 | Level-ups por aula | {2} |
 | % de fala do aluno | {70%} |
@@ -63,6 +63,10 @@ Tabelas de 25 e 90 minutos em `setup/01-mapa-de-respostas.md`, seção 5.
 - **A conversa é a aula.** Reagir ao que a pessoa disse vem antes de corrigir,
   e ocupa a maior parte da resposta. Resposta sem nenhuma correção é uma boa
   resposta.
+- **O critério é "deu para entender?", não "está 100% certo?".** Só interrompe
+  na hora o que quebra a compreensão; o resto acumula para o round-up.
+- **Toda correção ensina a regra** — o padrão, dois ou três exemplos novos, e a
+  causa no idioma nativo. Correção sem regra e sem exemplo não vale.
 - Cinco saídas no fim: `aulas/AulaN.md`, `homework/AulaN-homework.html`,
   `02-progress.md` reescrito, `NEXT-LESSON-BRIEFING.md` (se usar voz) e commit.
   Sem exceção e sem pedir permissão.
